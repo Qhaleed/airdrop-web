@@ -1,0 +1,46 @@
+.airdrop-container {
+    margin-top: 50px;
+    margin-bottom: 300px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 20px; /* Gap between grid items */
+
+}
+
+.airdrop-item {
+    /* Background color for grid items */
+    padding: 5px; /* Padding around grid items */
+    height: 300px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(249, 44%,25%);
+    overflow: hidden;
+    border-radius: 3px;
+    transition: 500ms;
+}
+.airdrop-item:hover {
+    transform: scale(1.1);
+    border: green solid 1px;
+    cursor: pointer;
+    transition: 500ms;
+}
+.airdrop-item:active {
+    opacity: 0.3;
+   
+}
+.airdrop-item img {
+    max-width: 100%; /* Set maximum width to 100% of the grid item */
+    max-height: 100%; /* Set maximum height to 100% of the grid item */
+    object-fit: contain; /* Ensure the image fits inside the grid item */
+    display: block; /* Prevents extra space below image */
+}
+.text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

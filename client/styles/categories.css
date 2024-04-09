@@ -1,0 +1,33 @@
+.categories {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: rgba(255, 255, 255, 0.096) solid 1px ;
+    transition: 500ms;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+.category-container {
+    margin-top: 13px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    transition: 500ms;
+    
+}   
+.category-container button {
+    padding: 5px 30px;
+    border-radius: 30px;
+    border: rgba(255, 255, 255, 0.329) solid 1px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+.category-container button:hover {
+    background-color: rgba(78, 63, 161, 0.425);
+    color: white;
+    cursor: pointer;
+}
+.category-container button:active {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

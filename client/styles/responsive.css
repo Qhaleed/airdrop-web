@@ -1,0 +1,29 @@
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .airdrop-container {
+        display: none;
+    }
+    .categories {
+        display: none;
+    }
+    .category-container {
+        display: none;
+    }
+
+
+    .mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 70% 0px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;    
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        border: rgba(255, 255, 255, 0.363) solid 1px;
+    }
+}
