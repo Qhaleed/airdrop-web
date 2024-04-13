@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(249, 44%,25%);
+    background: linear-gradient(115deg, #262935, #491926);
     overflow: hidden;
     border-radius: 3px;
     transition: 500ms;
