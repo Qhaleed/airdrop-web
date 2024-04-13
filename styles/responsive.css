@@ -4,6 +4,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        background: black;
         background-color: black;
     }
     .navbar {
@@ -20,7 +21,7 @@
         
     }
     .airdrop-item {
-        width: 100%;
+        width: 95%;
     }
     .airdrop-item:hover {
         transform: scale(0.9);

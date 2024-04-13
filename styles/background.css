@@ -1,5 +1,5 @@
 body {
    background: url(../assets/airdrop-images/elden_ring_photography_4k_hd_elden_ring.jpg);
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
 }
