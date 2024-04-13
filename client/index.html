@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-DWyHuUu78l9UdTiIeBfgHJj+jl5/JKqwKvI3wlXC9Ttcrj1uRdYvB3L0azjXrcpVe/DWjJh9CZ2d0tFrJz6tvw==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xL3fHXbKri6p8eYgMHS4jDK+O5xZb6L0MqmWbx1UObB5Z7P/gRhbFFJ02k21WucfGM2O2LsVOjW/DkiHQEI3zg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xL3fHXbKri6p8eYgMHS4jDK+O5xZb6L0MqmWbx1UObB5Z7P/gRhbFFJ02k21WucfGM2O2LsVOjW/DkiHQEI3zg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
@@ -39,14 +42,14 @@
     </div>
 
     <div class="category-container">
-        <button style="background-color: white; color: black;">All</button>
-        <button>NFT</button>
-        <button>MemeCoins</button>
-        <button>New</button>
-        <button>Trending</button>
+        <button style="background-color: white; color: black;" id="all">All</button>
+        <button id="nft" onclick="filterAirdrops('nft')">NFT</button>
+        <button id="memeCoin" onclick="filterAirdrops('memeCoin')">MemeCoins</button>
+        <button id="new" onclick="filterAirdrops('new')">New</button>
+        <button id="trending" onclick="filterAirdrops('trending')"> Trending</button>
     </div>
 </div>
-    <div class="airdrop-container">
+    <div class="airdrop-container" id="airdrop-container">
         <div class="airdrop-item">
             <div class="airdrop-item-img-container">
                 <img src="assets/airdrop-images/Social farming Twitter banner static (1).png" alt="image 1">
@@ -85,7 +88,13 @@
     </div>
 
     <div class="footer">
-        <i class="fa-facebook"></i>
+        <ul>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+        </ul>
+       
+
     </div>
     </div>
     <script src="scripts/background.js"></script>

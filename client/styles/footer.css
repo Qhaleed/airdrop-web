@@ -4,5 +4,22 @@
     position: relative;
     bottom: 0;
     left: 0;
+  
+   
 
+}
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px   ;
+}
+.footer ul li i {
+    font-size: 30px;
+}
+.footer ul li i:hover {
+    color: blue;
+    cursor: pointer;
+    transition: 300ms;
 }
