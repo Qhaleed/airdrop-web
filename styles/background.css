@@ -1,3 +1,4 @@
 body {
-    background: linear-gradient(115deg, #000000, #1b1b1b);
+   background: url(../assets/airdrop-images/elden_ring_photography_4k_hd_elden_ring.jpg);
+   background-size: contain;
 }
