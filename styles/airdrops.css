@@ -22,7 +22,7 @@
     transition: 500ms;
 }
 .airdrop-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     border: green solid 1px;
     cursor: pointer;
     transition: 500ms;

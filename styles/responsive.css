@@ -3,6 +3,7 @@
     body {
         margin: 0;
         padding: 0;
+        width: 100%;
         height: 100%;
         background: black;
         background-color: black;
@@ -24,7 +25,7 @@
         width: 95%;
     }
     .airdrop-item:hover {
-        transform: scale(0.9);
+        transform: scale(0.97);
     }
     .text {
         background-color: hsla(0, 0%, 0%, 0.247);
@@ -44,27 +45,28 @@
     .footer {
         margin: 0;
         width: 100%;
-        position: fixed;
+        position: relative;
         display: flex;
-        justify-content: right;
+        justify-content: center;
         margin-right: 300px;
         background-color: black;
         align-items: center;
+        padding-left: 200px;
         
     }
 
 
-    /* .mobile {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: 70% 0px;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;    
-        display: flex;
+    /* For the about page */
+    .about-container {
+        display: none;
+    }
+    .component-container {
+        display: none;
         flex-direction: column;
-        font-size: 20px;
-        border: rgba(255, 255, 255, 0.363) solid 1px;
-    } */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    
 }

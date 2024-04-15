@@ -1,5 +1,6 @@
 body {
-   background: url(../assets/airdrop-images/elden_ring_photography_4k_hd_elden_ring.jpg);
+   /* background: url(../assets/airdrop-images/elden_ring_photography_4k_hd_elden_ring.jpg); */
+   background: linear-gradient(90deg,black,rgb(37, 37, 37));
    background-size: cover;
    background-repeat: no-repeat;
 }
