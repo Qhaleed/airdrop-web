@@ -14,6 +14,10 @@
         position: relative;
         left: 0;
         border-radius: 0;
+        position: fixed;
+        top: 0;
+        border: none;
+
     }
     .airdrop-container {
         display: flex;
@@ -59,6 +63,7 @@
     /* For the about page */
     .about-container {
         display: none;
+        margin-top: 60vh;
     }
     .component-container {
         display: none;
@@ -68,5 +73,6 @@
         padding: 0;
         display: none;
     }
+    
     
 }

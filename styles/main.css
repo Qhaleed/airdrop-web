@@ -13,6 +13,8 @@ i {
 body {
     color: white;
     padding: 30px 10%;
+    background-color: black;
+    height: 100vh;
 }
 .mobile {
     display: none;

@@ -22,7 +22,7 @@
 <body>
    <div class="headed">
     <div class="header">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <ul class="logo">RSL</ul>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -42,32 +42,31 @@
     </div>
 
     <div class="category-container">
-        <button style="background-color: white; color: black;" id="all">All</button>
-        <button id="nft" onclick="filterAirdrops('nft')">NFT</button>
-        <button id="memeCoin" onclick="filterAirdrops('memeCoin')">MemeCoins</button>
-        <button id="new" onclick="filterAirdrops('new')">New</button>
-        <button id="trending" onclick="filterAirdrops('trending')"> Trending</button>
+        <button id="allBtn" onclick="filterAirdrops('all')">All</button>
+        <button id="nftBtn" onclick="filterAirdrops('nft')">NFT</button>
+        <button id="memeCoinBtn" onclick="filterAirdrops('memeCoin')">MemeCoins</button>
+        <button id="newBtn" onclick="filterAirdrops('new')">New</button>
+        <button id="trendingBtn" onclick="filterAirdrops('trending')">Trending</button>
     </div>
-</div>
+    
+    
     <div class="airdrop-container" id="airdrop-container">
-        <div class="airdrop-item">
+        <div class="airdrop-item" data-categories="nft">
             <div class="airdrop-item-img-container" onclick="window.location.href = 'https://bubble.imaginaryones.com/' ">
                 <img src="assets/airdrop-images/Social farming Twitter banner static (1).png" alt="image 1">
                 <div class="text">Powering Up TheImaginary World</div>
             </div>
-            
-           
-        </div>
-        <div class="airdrop-item" onclick="window.location.href = 'https://paramgaming.com/?referCode=0AE053C805#/staking   ' ">
+        </div> 
+        <div class="airdrop-item" data-categories="memeCoin">
             <img src="assets/airdrop-images/param_logo.33f994389333c9027a7f.png" alt="image 1">
             <div class="text">Pioneering the next generation of Gaming through United Creativity and Technological Advancement.</div>
         </div>
-        <div class="airdrop-item" onclick="window.location.href ='https://sidequest.rcade.game/quests'">
+        <div class="airdrop-item" data-categories="trending">
             <img src="assets/airdrop-images/side-quest.png" alt="image 1">
             <div class="text">Text Content Here</div>
         </div>
-        
     </div>
+    
 
 
 
@@ -88,5 +87,6 @@
     </div>
     </div>
     <script src="scripts/background.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

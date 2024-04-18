@@ -3,11 +3,16 @@
     margin-bottom: 300px;
     display: grid;
     width: 100%;
+    height: 100vh;
     grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
     grid-gap: 20px; /* Gap between grid items */
-
+    opacity: 0;
+   
 }
-
+#allBtn {
+    background-color: white;
+    color: black;
+}
 .airdrop-item {
     /* Background color for grid items */
     padding: 5px; /* Padding around grid items */
@@ -20,6 +25,7 @@
     overflow: hidden;
     border-radius: 3px;
     transition: 500ms;
+    
 }
 .airdrop-item:hover {
     transform: scale(1.03);
@@ -43,4 +49,10 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+
+/* Category color */
+.active {
+    background-color: #ffffff; /* Set the desired background color for the active category button */
 }
