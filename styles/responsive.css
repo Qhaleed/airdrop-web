@@ -13,16 +13,19 @@
         width: 100%;
         position: relative;
         left: 0;
+        height: 7.5vh;
         border-radius: 0;
         position: fixed;
         top: 0;
         border: none;
+        background:linear-gradient(115deg, #b30938, #262935) ;
 
     }
     .airdrop-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
         
     }
     .airdrop-item {
@@ -62,8 +65,9 @@
 
     /* For the about page */
     .about-container {
-        display: none;
-        margin-top: 60vh;
+        display: block;
+        margin-top: 20%;
+        padding: 0px 0px;
     }
     .component-container {
         display: none;
@@ -73,6 +77,16 @@
         padding: 0;
         display: none;
     }
+    .image-container {
+        display: none;
+        height: 100vh;
+    }
     
-    
+    #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999; /* Ensure the loading element appears on top of other content */
+    }
 }

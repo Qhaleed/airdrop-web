@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/airdrops.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <title>Document</title>
+    <title>airdrops.io</title>
 </head>
 <body>
    <div class="headed">
@@ -41,6 +41,16 @@
         <h4>Categories</h4>
     </div>
 
+    <!-- Add a loading spinner or message -->
+    <!-- SVG loading spinner -->
+    <div id="loading" style="display: none;">
+        <svg width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle cx="50" cy="50" fill="none" stroke="#fff" stroke-width="8" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+            </circle>
+        </svg>
+    </div>
+
     <div class="category-container">
         <button id="allBtn" onclick="filterAirdrops('all')">All</button>
         <button id="nftBtn" onclick="filterAirdrops('nft')">NFT</button>
@@ -48,6 +58,8 @@
         <button id="newBtn" onclick="filterAirdrops('new')">New</button>
         <button id="trendingBtn" onclick="filterAirdrops('trending')">Trending</button>
     </div>
+
+
     
     
     <div class="airdrop-container" id="airdrop-container">
@@ -65,6 +77,19 @@
             <img src="assets/airdrop-images/side-quest.png" alt="image 1">
             <div class="text">Text Content Here</div>
         </div>
+        <div class="airdrop-item" data-categories="trending">
+            <img src="assets/airdrop-images/side-quest.png" alt="image 1">
+            <div class="text">Text Content Here</div>
+        </div>
+        <div class="airdrop-item" data-categories="trending">
+            <img src="assets/airdrop-images/side-quest.png" alt="image 1">
+            <div class="text">Text Content Here</div>
+        </div>
+        <div class="airdrop-item" data-categories="trending">
+            <img src="assets/airdrop-images/side-quest.png" alt="image 1">
+            <div class="text">Text Content Here</div>
+        </div>
+        
     </div>
     
 
@@ -78,7 +103,7 @@
 
     <div class="footer">
         <ul>
-            <li><i class="fab fa-facebook" onclick="window.location.href ='https://www.facebook.com/resly.kadiri/'" ></i></li>
+            <li><a href="https://www.facebook.com/resly.kadiri/" target="_blank"><i class="fab fa-facebook"></i></a></li>
             <li><i class="fab fa-instagram" onclick="window.location.href ='https://www.instagram.com/qr_quode/'"></i></li>
             <li><i class="fab fa-twitter" onclick="window.location.href ='https://twitter.com/HahaMahir'"></i></li>
         </ul>

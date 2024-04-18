@@ -14,8 +14,15 @@ body {
     color: white;
     padding: 30px 10%;
     background-color: black;
-    height: 100vh;
+  
 }
 .mobile {
     display: none;
+}
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }

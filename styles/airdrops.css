@@ -1,11 +1,10 @@
 .airdrop-container {
     margin-top: 50px;
-    margin-bottom: 300px;
     display: grid;
     width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-    grid-gap: 20px; /* Gap between grid items */
+    height: 70vh;
+    grid-template-columns: repeat(4, 1fr); /* Three columns with equal width */
+    grid-gap: 10px; /* Gap between grid items */
     opacity: 0;
    
 }
@@ -25,6 +24,7 @@
     overflow: hidden;
     border-radius: 3px;
     transition: 500ms;
+    border: 1px solid rgba(255, 0, 0, 0.199);
     
 }
 .airdrop-item:hover {

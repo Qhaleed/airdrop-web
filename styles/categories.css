@@ -22,7 +22,7 @@
     color: white;
 }
 .category-container button:hover {
-    background-color: rgba(78, 63, 161, 0.425);
+    background-color: rgba(139, 138, 145, 0.76);
     color: white;
     cursor: pointer;
 }
