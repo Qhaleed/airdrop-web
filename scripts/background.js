@@ -8,15 +8,15 @@ function scrollFunction() {
     if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
         navbar.style.background = "linear-gradient(115deg, #262935, #b30938)";
         if (window.innerWidth > mobileWidth) { // Check if it's not a mobile device
-            navbar.style.width = '50%';
+          
             
-            navbar.style.backgroundPosition = "100%";
+        
         } 
     } else {
         navbar.style.background = "linear-gradient(115deg, #b30938, #262935)";
         navbar.style.transition = "1000ms";
         if (window.innerWidth > mobileWidth) { // Check if it's not a mobile device
-            navbar.style.width = '100%';
+            
         }
     }
 }

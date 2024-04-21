@@ -14,8 +14,9 @@
 }
 .airdrop-item {
     /* Background color for grid items */
-    padding: 5px; /* Padding around grid items */
-    height: 300px;
+    padding: 5px;
+    height: 30vh; /* Padding around grid items */
+   max-height: 65%;;
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +26,7 @@
     border-radius: 3px;
     transition: 500ms;
     border: 1px solid rgba(255, 0, 0, 0.199);
+
     
 }
 .airdrop-item:hover {
@@ -32,15 +34,17 @@
     border: green solid 1px;
     cursor: pointer;
     transition: 500ms;
+    
 }
 .airdrop-item:active {
     opacity: 0.3;
    
 }
 .airdrop-item img {
+    width: 100%;
     max-width: 100%; /* Set maximum width to 100% of the grid item */
-    max-height: 100%; /* Set maximum height to 100% of the grid item */
-    object-fit: contain; /* Ensure the image fits inside the grid item */
+    max-height: 180px; /* Set maximum height to 100% of the grid item */
+    object-fit: cover; /* Ensure the image fits inside the grid item */
     display: block; /* Prevents extra space below image */
 }
 .text {
@@ -49,6 +53,8 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    align-items: top;
+   
 }
 
 

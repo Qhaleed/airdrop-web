@@ -26,10 +26,12 @@
         flex-direction: column;
         align-items: center;
         height: auto;
+        margin-bottom: 150px;
         
     }
     .airdrop-item {
         width: 95%;
+        
     }
     .airdrop-item:hover {
         transform: scale(0.97);
@@ -37,20 +39,44 @@
     .text {
         background-color: hsla(0, 0%, 0%, 0.247);
     }
+
+
+    .airdrop-item img {
+        max-width: 100%; /* Set maximum width to 100% of the grid item */
+        max-height: 190px; /* Set maximum height to 100% of the grid item */
+        object-fit: cover; /* Ensure the image fits inside the grid item */
+        display: block; /* Prevents extra space below image */
+    }
+    .airdrop-item-img-container {
+        width: 100%;
+        max-width: 100%; /* Ensures image doesn't exceed the width of its container */
+        max-height: 100%; /* Ensures image doesn't exceed the height of its container */
+        overflow: hidden; /* Hides any parts of the image that exceed the container's dimensions */
+        
+    }   
+    
+    .airdrop-item-img-container img {
+        width: 100%; /* Makes the image fill the entire width of its container */
+        height: auto; /* Allows the image's height to adjust proportionally */
+    }
+
     .categories {
-        display: flex;
+        display: none;
     }
     .category-container {
-        display: block;
+        display: flex;
         width: 100%;
         gap: 0;
-        margin: 0;
+        margin-top: 90px;
+        justify-content: stretch;
+        
     }
     .category-container button {
         padding: 10px 20px;
     }
     .footer {
         margin: 0;
+        
         width: 100%;
         position: relative;
         display: flex;
@@ -68,6 +94,7 @@
         display: block;
         margin-top: 20%;
         padding: 0px 0px;
+        
     }
     .component-container {
         display: none;
