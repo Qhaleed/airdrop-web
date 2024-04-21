@@ -26,3 +26,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
