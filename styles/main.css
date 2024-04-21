@@ -12,7 +12,9 @@ i {
 }
 body {
     color: white;
-    padding: 30px 10%;
+    padding: 0px 10%;
+    height: 99vh;
+    padding-bottom: 0;
     background-color: black;
   
 }
